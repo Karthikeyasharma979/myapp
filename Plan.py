@@ -20,8 +20,7 @@ def plan(age, height, weight, purpose):
     
     chain = LLMChain(llm=llm, prompt=ptemp)
     res = chain.run({'Age': age, 'Height': height, 'Weight': weight, 'Purpose': purpose})
-    return res
-
+    return res["text"]
 
 
 
