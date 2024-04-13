@@ -22,6 +22,7 @@ str = st.button(label='Submit', key="submit")
 if str:
     if choise == 'Generate Diet Plan':
         result = Plan.plan(age=age,height=height,weight=weight,purpose=pur)
+        st.write(result)
     if choise == 'Health calculate':
         result = Plan.call(age=age,height=height,weight=weight)
         st.write(result)
