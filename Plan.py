@@ -23,7 +23,6 @@ def plan(age, height, weight, purpose):
     return res.get("text")
 
 
-
 def call(age,height,weight):
     llm  = GoogleGenerativeAI(model="gemini-pro")
     chain = LLMMathChain(llm=llm,verbose=True)
