@@ -4,7 +4,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain 
 from langchain.chains import LLMMathChain
 
-os.environ["GOOGLE_API_KEY"]=""
+os.environ["GOOGLE_API_KEY"]="AIzaSyDmZRXIkfaxY5c0BzBPO-1RtNhA9kEInNQ"
 def plan(age, height, weight, purpose,sugar,bp):
     llm = GoogleGenerativeAI(model="gemini-pro")
     ptemp = PromptTemplate(
